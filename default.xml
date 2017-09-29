@@ -507,4 +507,7 @@
 
   <include name="snippets/cm.xml" />
 
+  <!-- Include TWRP extras -->
+  <include name="twrp-extras.xml" />
+
 </manifest>

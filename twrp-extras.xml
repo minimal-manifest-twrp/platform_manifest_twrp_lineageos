@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="TeamWin"
+            fetch="https://github.com/TeamWin"
+            review="https://gerrit.twrp.me" />
+
+<!-- Include external unzip repo from CyanogenMod for toolbox/toybox support -->
+    <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-14.1" />
+</manifest>
