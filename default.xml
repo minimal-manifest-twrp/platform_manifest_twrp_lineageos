@@ -11,7 +11,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.1_r25" />
+           revision="refs/tags/android-7.1.2_r39" />
 
   <default revision="refs/heads/cm-14.1"
            remote="github"
@@ -32,7 +32,7 @@
   <!-- project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" /> -->
   <!-- project path="art" name="LineageOS/android_art" groups="pdk" /> -->
   <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" groups="pdk-cw-fs"/>
+  <!-- project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-9.0" groups="pdk-cw-fs"/> -->
   <!-- project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" /> -->
   <!-- project path="dalvik" name="LineageOS/android_dalvik" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="developers/build" name="platform/developers/build" remote="aosp" /> -->
@@ -506,5 +506,8 @@
   <!-- project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" /> -->
 
   <include name="snippets/cm.xml" />
+
+  <!-- Include TWRP extras -->
+  <include name="twrp-extras.xml" />
 
 </manifest>
